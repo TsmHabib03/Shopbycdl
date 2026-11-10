@@ -1,0 +1,81 @@
+[
+  {
+    "viewport": "desktop",
+    "errors": [],
+    "overflow": false,
+    "images": 26,
+    "nonSquare": 0,
+    "next": "Garden Party Tote",
+    "previous": "So Kelly 22",
+    "detail": {
+      "title": "So Kelly 22",
+      "visible": true,
+      "inert": true
+    },
+    "closed": true,
+    "chanelCount": 1,
+    "allCount": 6,
+    "saved": "(1)",
+    "persisted": "(1)",
+    "shortlistCount": 1,
+    "empty": true,
+    "cardDetail": "So Kelly 22",
+    "cardClosed": true,
+    "finalOverflow": false
+  },
+  {
+    "viewport": "mobile",
+    "errors": [],
+    "overflow": false,
+    "images": 26,
+    "nonSquare": 0,
+    "next": "Garden Party Tote",
+    "previous": "So Kelly 22",
+    "detail": {
+      "title": "So Kelly 22",
+      "visible": true,
+      "inert": true
+    },
+    "closed": true,
+    "chanelCount": 1,
+    "allCount": 6,
+    "saved": "(1)",
+    "persisted": "(1)",
+    "shortlistCount": 1,
+    "empty": true,
+    "cardDetail": "So Kelly 22",
+    "cardClosed": true,
+    "finalOverflow": false,
+    "mobileMenu": true,
+    "mobileMenuClosed": true,
+    "drag": "Garden Party Tote"
+  },
+  {
+    "viewport": "small",
+    "errors": [],
+    "overflow": false,
+    "images": 26,
+    "nonSquare": 0,
+    "next": "Garden Party Tote",
+    "previous": "So Kelly 22",
+    "detail": {
+      "title": "So Kelly 22",
+      "visible": true,
+      "inert": true
+    },
+    "closed": true,
+    "chanelCount": 1,
+    "allCount": 6,
+    "saved": "(1)",
+    "persisted": "(1)",
+    "shortlistCount": 1,
+    "empty": true,
+    "cardDetail": "So Kelly 22",
+    "cardClosed": true,
+    "finalOverflow": false
+  },
+  {
+    "reducedMotionDetail": true,
+    "imageClip": "inset(0% 0px 0px)"
+  }
+]

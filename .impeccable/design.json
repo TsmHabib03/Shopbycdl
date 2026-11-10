@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T08:19:16.438117+00:00",
+  "title": "Design System: Shopbycdl",
+  "extensions": {
+    "scope": {
+      "target": "shopbycdl.html",
+      "excludes": [
+        "index.html"
+      ]
+    },
+    "colorMeta": {
+      "green": {
+        "role": "primary",
+        "displayName": "Forest Green"
+      },
+      "gold": {
+        "role": "secondary",
+        "displayName": "Brand Gold"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Product Paper"
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Detail Sheet"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Brand display",
+        "purpose": "Hero lettering"
+      },
+      "label": {
+        "displayName": "Compact interface",
+        "purpose": "Navigation and short labels"
+      }
+    },
+    "shadows": [
+      {
+        "name": "showroom-product",
+        "value": "0 20px 12px rgba(18,25,19,.13)",
+        "purpose": "Silhouette-derived product drop shadow"
+      },
+      {
+        "name": "catalogue-product",
+        "value": "0 15px 10px rgba(18,25,19,.1)",
+        "purpose": "Contained catalogue cutout"
+      },
+      {
+        "name": "detail-product",
+        "value": "0 25px 16px rgba(18,25,19,.12)",
+        "purpose": "Enlarged detail photograph"
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Caption, image and state reveals"
+      },
+      {
+        "name": "detail-ease",
+        "value": "cubic-bezier(.76,0,.18,1)",
+        "purpose": "Square sheet expansion"
+      },
+      {
+        "name": "spring-rate",
+        "value": "5.2",
+        "purpose": "Exponential showroom settling per second"
+      },
+      {
+        "name": "detail-open",
+        "value": "950ms",
+        "purpose": "Square clip expansion"
+      },
+      {
+        "name": "detail-close",
+        "value": "700ms",
+        "purpose": "Reverse square expansion"
+      },
+      {
+        "name": "reduced",
+        "value": "1ms",
+        "purpose": "Immediate reveals with no spring interpolation"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small-phone",
+        "value": "360px"
+      },
+      {
+        "name": "phone",
+        "value": "767px"
+      },
+      {
+        "name": "two-column",
+        "value": "1023px"
+      },
+      {
+        "name": "wide",
+        "value": "1700px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Featured product action on light ground.",
+      "html": "<button class=\"ds-primary\">Explore this bag<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M3 12h18M15 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-primary{font-family:var(--sans,\"Inter Tight\",system-ui,sans-serif);font-size:11px;border-radius:0;cursor:pointer;height:44px;padding:0 20px;background:var(--green,#1A2421);color:var(--paper,#EFEDE6);border:1px solid var(--green,#1A2421);display:inline-flex;align-items:center;justify-content:center;gap:22px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;transition:background-color .35s,color .35s}.ds-primary:hover{background:var(--gold,#D4AF37);color:var(--green,#1A2421)}.ds-primary:focus-visible{outline:2px solid var(--green,#1A2421);outline-offset:5px}"
+    },
+    {
+      "name": "Gold outlined button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "Daily deals and service actions on green.",
+      "html": "<button class=\"ds-gold\">Shop with Chay<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M3 12h18M15 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-gold{font-family:var(--sans,\"Inter Tight\",system-ui,sans-serif);font-size:11px;border-radius:0;cursor:pointer;height:44px;padding:0 20px;background:var(--green,#1A2421);color:var(--gold,#D4AF37);border:1px solid var(--gold,#D4AF37);display:inline-flex;align-items:center;gap:22px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;transition:background-color .35s,color .35s}.ds-gold:hover{background:var(--gold,#D4AF37);color:var(--green,#1A2421)}.ds-gold:focus-visible{outline:2px solid var(--gold,#D4AF37);outline-offset:5px}"
+    },
+    {
+      "name": "Brand filters",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "Straight grouped filters with a selected state.",
+      "html": "<div class=\"ds-filters\" role=\"group\" aria-label=\"Filter bags\"><button aria-pressed=\"true\">All pieces</button><button aria-pressed=\"false\">Hermès</button><button aria-pressed=\"false\">Chanel</button></div>",
+      "css": ".ds-filters{display:inline-flex;border:1px solid var(--line,#C7C8BB)}.ds-filters button{font-family:var(--sans,\"Inter Tight\",system-ui,sans-serif);font-size:11px;border-radius:0;cursor:pointer;height:40px;padding:0 16px;border:0;border-right:1px solid var(--line,#C7C8BB);background:transparent;color:var(--green,#1A2421);letter-spacing:.08em}.ds-filters button:last-child{border-right:0}.ds-filters [aria-pressed=\"true\"]{background:var(--green,#1A2421);color:var(--gold,#D4AF37)}.ds-filters button:hover{text-decoration:underline}.ds-filters button:focus-visible{outline:2px solid var(--green,#1A2421);outline-offset:4px}"
+    },
+    {
+      "name": "Catalogue card",
+      "kind": "card",
+      "refersTo": "product-media",
+      "description": "Straight contained media frame and product facts.",
+      "html": "<article class=\"ds-card\"><button class=\"ds-media\" aria-label=\"View So Kelly 22\"><span>Hermès</span></button><div class=\"ds-info\"><span>HERMÈS</span><h3>So Kelly 22</h3><p>Red leather</p><div class=\"ds-bottom\"><span>Price upon inquiry</span><button>Explore piece</button></div></div></article>",
+      "css": ".ds-card{width:420px;color:var(--green,#1A2421);font-family:var(--sans,\"Inter Tight\",system-ui,sans-serif)}.ds-media{font-family:var(--sans,\"Inter Tight\",system-ui,sans-serif);font-size:11px;border-radius:0;cursor:pointer;position:relative;display:block;width:100%;height:330px;background:#E5E5DA;border:1px solid #D9DBCD;color:var(--muted,#61685D)}.ds-media span{position:absolute;top:15px;left:16px}.ds-media:hover{border-color:var(--green,#1A2421)}.ds-media:focus-visible,.ds-bottom button:focus-visible{outline:2px solid var(--green,#1A2421);outline-offset:5px}.ds-info{padding-top:18px;font-size:11px}.ds-info>span{letter-spacing:.14em}.ds-info h3{font:400 25px/1.2 var(--serif,\"Newsreader\",Georgia,serif);margin:7px 0 8px}.ds-info p{color:var(--muted,#61685D);margin:0 0 14px}.ds-bottom{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line,#C7C8BB)}.ds-bottom button{font-family:var(--sans,\"Inter Tight\",system-ui,sans-serif);font-size:11px;border-radius:0;cursor:pointer;min-height:44px;background:transparent;border:0;color:var(--green,#1A2421);text-transform:uppercase}.ds-bottom button:hover{text-decoration:underline}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "button-gold",
+      "description": "Compact tracked links on the brand ground.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#collection\">The collection</a><a href=\"#personal-shopping\">Personal shopping</a><button>Saved (0)</button></nav>",
+      "css": ".ds-nav{display:flex;gap:32px;padding:20px;background:var(--green,#1A2421);color:var(--gold,#D4AF37)}.ds-nav a,.ds-nav button{font-family:var(--sans,\"Inter Tight\",system-ui,sans-serif);font-size:11px;border-radius:0;cursor:pointer;min-height:44px;display:flex;align-items:center;background:transparent;border:0;text-decoration:none;color:inherit;text-transform:uppercase;letter-spacing:.12em}.ds-nav a:hover,.ds-nav button:hover{text-decoration:underline}.ds-nav :focus-visible{outline:2px solid var(--gold,#D4AF37);outline-offset:5px}"
+    },
+    {
+      "name": "Square arrow control",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Previous and next showroom browsing.",
+      "html": "<button class=\"ds-arrow\" aria-label=\"Next bag\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M3 12h18M15 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-arrow{font-family:var(--sans,\"Inter Tight\",system-ui,sans-serif);font-size:11px;border-radius:0;cursor:pointer;width:54px;height:46px;border:1px solid var(--line,#C7C8BB);color:var(--green,#1A2421);background:transparent;display:grid;place-items:center;transition:background-color .35s,color .35s}.ds-arrow:hover{background:var(--green,#1A2421);color:var(--gold,#D4AF37)}.ds-arrow:focus-visible{outline:2px solid var(--green,#1A2421);outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Luxury personal shopping",
+    "overview": "The supplied gold monogram and script emblem set the brand character. Forest green supports gold and pale text, while neutral product grounds let the actual bag photographs carry color and material. Serif display type creates a considered pace; compact sans-serif controls keep browsing direct.",
+    "keyCharacteristics": [
+      "Forest green and gold identity.",
+      "Straight rules and square interface geometry.",
+      "Real product photography with intact silhouettes.",
+      "Serif titles and concise sans-serif controls."
+    ],
+    "rules": [
+      {
+        "name": "The Brand Pair Rule",
+        "body": "Use green and gold together for branded surfaces and primary actions. Gold is a flat brand color; photography supplies the material detail.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Newsreader carries display, section, product and detail titles. Inter Tight carries navigation, descriptions, specifications and controls. Both fonts are embedded in the copied HTML.",
+        "section": "typography"
+      },
+      {
+        "name": "The Product Depth Rule",
+        "body": "Apply diffuse shadows to product cutouts, rather than to every interface container. Actual bag silhouettes remain the basis of those shadows. Cards and controls use borders or tonal separation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Edge Rule",
+        "body": "Every component, border, card and divider uses rigid right angles. Radius is zero, including clip-path expansion into the detail sheet. The supplied circular logo is artwork and retains its emblem outline; it does not introduce rounded interface controls.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do use the supplied logo and actual product photographs.",
+      "Do keep every interface corner square.",
+      "Do preserve silhouettes with image containment.",
+      "Do maintain keyboard focus and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't invent prices, stock, founding dates or commercial guarantees.",
+      "Don't apply Shopbycdl tokens to the preserved original archive.",
+      "Don't shrink functional labels below 11px to fit a layout."
+    ]
+  }
+}
